@@ -18,7 +18,7 @@ Also, there is a folder with pictures included to help you with the download pro
 3. Start the Shortcut or EXE file
 
 # Goal 🎯
-The goal of the game is to kill all the enemies on the screen and dodge the bullets they shoot! You have 3 lives, so don't die! There are 4 obstacles that block your lasers and the alien's lasers too. Keep in mind that it's just a small project to pass time and isn't really a full game. Just made it for fun :)
+The goal of the game is to kill all the enemies on the screen and dodge the bullets they shoot! You have 3 lives, so don't die! There are 4 obstacles that block your projectile and the enemie's projectile too. Keep in mind that it's just a small project to pass time and isn't really a full game. Just made it for school.
 
 # Controls ⌨
 | Key | Description |
