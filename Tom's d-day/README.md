@@ -4,7 +4,7 @@ Most of this was done for a school project (shocking!!)<br />
 
 ![image](https://raw.githubusercontent.com/TomteMann/Projects/main/Tom's%20d-day/Code%2Bleftovers/Graphics/picture.png)
 
-# How to Download and Run  original ⬇
+# How to Download and Run original ⬇
 1. Make sure you have Python installed and Pygame too. If you have Python, go to the Command Line and type `pip install pygame`. <br />
 2. Download this Repository (Cloning it) or head to the [`releases page`](https://github.com/SpyderGamer/Space-Invaders-with-Python/releases). <br />
 3. Extract the ZIP file and find the `Main.py` file which is located in the `Code` folder. <br />
@@ -12,7 +12,7 @@ Most of this was done for a school project (shocking!!)<br />
 
 Also, there is a folder with pictures included to help you with the download process.
 
-# How to download my and run version ⬇⬇⬇
+# How to download my and run version ⬇⬇
 1. Download my ZIP File
 2. Unpack the ZIP File
 3. Start the Shortcut or EXE file
