@@ -12,7 +12,7 @@ Most of this was done for a school project (shocking!!)<br />
 
 Also, there is a folder with pictures included to help you with the download process.
 
-# How to download my version ⬇⬇⬇
+# How to download my and run version ⬇⬇⬇
 1. Download my ZIP File
 2. Unpack the ZIP File
 3. Start the Shortcut or EXE file
