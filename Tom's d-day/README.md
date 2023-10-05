@@ -1,5 +1,6 @@
 # Space-Invaders-with-Python 👾
-A simple retro-like space invaders game made with Python! Credits to ClearCode for making the tutorial! https://youtu.be/o-6pADy5Mdg <br />
+A simple retro-like space invaders-y game made with Python! Credits to ClearCode for making the tutorial! https://youtu.be/o-6pADy5Mdg <br />
+Most of this was done for a school project (shocking!!)
 
 ![image](https://raw.githubusercontent.com/TomteMann/Projects/main/Tom's%20d-day/Code%2Bleftovers/Graphics/picture.png)
 
