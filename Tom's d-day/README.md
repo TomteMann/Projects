@@ -1,7 +1,7 @@
 # Space-Invaders-with-Python 👾
 A simple retro-like space invaders game made with Python! Credits to ClearCode for making the tutorial! https://youtu.be/o-6pADy5Mdg <br />
 
-![image](https://github.com/TomteMann/Projects/blob/main/Tom's%20d-day/Code+leftovers/Graphics/picture.png?raw=true)
+![image](https://raw.githubusercontent.com/TomteMann/Projects/main/Tom's%20d-day/Code%2Bleftovers/Graphics/picture.png)
 
 # How to Download and Run  original ⬇
 1. Make sure you have Python installed and Pygame too. If you have Python, go to the Command Line and type `pip install pygame`. <br />
