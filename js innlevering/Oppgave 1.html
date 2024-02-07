@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Oppgave 1</title>
+		<meta charset="utf-8" />
+		<script>	
+
+		</script>		
+    </head>
+
+    <body>
+    
+        <script>
+            //nødvendige variabler
+            let fart1 = 40;
+            let fart2 = 90;
+            let fartsgrense = 80;
+            
+            //finner gjennomsnitsfarten
+            let gjennomsnitt = (fart1 + fart2) / 2;
+            let ledetekst = "Gjennomsnittsfarten er ";
+
+            //gir en en melding til brukeren hva gjennomsnitsfarten er mellom de to bilene
+            alert(ledetekst + gjennomsnitt); 
+            
+            //fartsgrennse skjekker
+            if (fart1 <= fartsgrense) {
+                alert("Lovlig fart");
+			} 
+            else if (fart1 <= 90) { //hvist bilen går fortere en 80 men under 90
+                alert("1500 kr i bot");
+			} 
+            else { //hvist bilen går fortere en 90
+                alert("3000 kr i bot")
+            }
+
+            if (fart1 <= fartsgrense && fart2 <= fartsgrense) { //hvist begge bilene går under 80
+                alert("false");
+            }
+            else if (fart1 >= fartsgrense && fart2 >= fartsgrense) { //hvist begge bilene går over 80
+                alert("false");
+            }
+            else { //hvist bare en bil går under fartsgrennsa
+                alert("true");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+

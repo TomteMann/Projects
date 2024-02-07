@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Oppgave 2</title>
+		<meta charset="utf-8" />
+		
+    </head>
+
+    <body>
+        
+
+        <h2>Fartskontroll</h2>
+
+        Oppgi fart: <input type="number" id="fart">
+        <button type="button" id="registrer">Registrer</button>
+        <br><br>
+        Melding: <input type="text" id="melding" readonly>
+        <br><br>
+        Avvik:   <input type="text" id="avvik" readonly>
+        <br><br><br><br>
+        <button onclick="visStatistikk()">Oppdater statistikk </button>
+        <button onclick="resetStatistikk()">Reset statistikk</button>
+        <p>Antall biler målt: <span id="antallBiler"></span></p>
+        <p>Bilenes gjennomsnittsfart: <span id="gjennomsnittsfart"></span> km/time</p>
+        <p>Antall biler over fartsgrensen: <span id="antallBrudd"></span></p>
+        <p>Samlet bot: <span id="samletBot"></span> kr</p>
+
+        <script>
+
+
+            let fartsgrense = 80;
+            let melding = "";
+            let totalBiler= 0;
+            let totalFart= 0;
+            let antallBrudd= 0;
+            let samletBot= 0;
+            
+
+            document.getElementById("registrer").onclick = registrer;
+
+            function registrer() {
+                //får fram farten som var skrevet
+                const fart = parseFloat(document.getElementById("fart").value);
+                totalBiler++; // +1 på totale biler
+                totalFart += fart;  // legger til fart i totalFart
+
+            //fartsgrennse skjekker
+            if (fart <= fartsgrense) {
+                document.getElementById("melding").value = "Lovlig fart";
+			} 
+            else if (fart <= 90) { //hvist bilen går fortere en 80 men under 90
+                document.getElementById("melding").value = "1500 kr i bot";
+                antallBrudd++;
+                samletBot+=1500;
+			} 
+            else { //hvist bilen går fortere en 90
+                document.getElementById("melding").value = "3000 kr i bot";
+                antallBrudd++;
+                samletBot+=3000;
+            }
+                //tar farten og tar bort fartsgrensen(80km/t)
+                let avik= fart - fartsgrense;
+                let avik1= Math.abs(avik); //gjør negative tall til positive (eneste måten det funket)
+                document.getElementById("avvik").value = avik1 + " km/t";
+            }
+            //oppdater statistikk knapp
+            function visStatistikk() {
+            document.getElementById("antallBiler").textContent = totalBiler;
+            document.getElementById("gjennomsnittsfart").textContent = (totalFart / totalBiler).toFixed(2);
+            document.getElementById("antallBrudd").textContent = antallBrudd;
+            document.getElementById("samletBot").textContent = samletBot.toFixed(0);
+            }
+
+            //reset statistikk knapp
+            function resetStatistikk() {
+            totalBiler= 0;
+            totalFart= 0;
+            antallBrudd= 0;
+            samletBot= 0;
+
+            //vise att statistikken ble fjernet
+            document.getElementById("antallBiler").textContent = totalBiler;
+            document.getElementById("gjennomsnittsfart").textContent = (totalFart / totalBiler).toFixed(2);
+            document.getElementById("antallBrudd").textContent = antallBrudd;
+            document.getElementById("samletBot").textContent = samletBot.toFixed(0);
+            }
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
